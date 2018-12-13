@@ -1,8 +1,14 @@
 module Hangman
   module Dictionary
-    WORDS = %w{
-      banana avocado apple chocolate froyo peanut
-    }
+
+    WORDS = ""
+
+    WORDS = File.readlines("words.txt").each do |line|
+
+      line.strip!
+      line.length >= 5
+
+    end
 
     def self.random
       WORDS.sample

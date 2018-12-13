@@ -11,11 +11,27 @@ module Hangman
   _|___
 HANG
 
-    ALIVE = <<WIN
+    ALIVE_R = <<WIN
 
   (•_•)
   <)  )╯
   /   \\
+WIN
+
+  ALIVE_L = <<WIN
+
+  \(•_•)
+  (  (>
+  /   \\
+
+WIN
+
+  ALIVE_C = <<WIN
+
+  (•_•)
+  <)  )>
+  /   \\
+
 WIN
 
     OBFUSCATION_CHAR = "👾"
